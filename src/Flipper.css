@@ -1,0 +1,15 @@
+.Flipper {
+  color: white;
+}
+
+
+.Flipper button{
+  width: 150px;
+  height: 40px;
+  font-size: 15pt;
+  outline: none;
+  border-radius: 10px;
+  background-color: orange;
+  border: 0px solid black;
+  margin: 10px;
+}

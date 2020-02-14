@@ -1,4 +1,4 @@
-# React lottery number generator
+# React coin flip counter
 
 Experiments with React
 

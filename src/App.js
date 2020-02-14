@@ -6,8 +6,12 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className='App-header'>Coin Flip Counter</header>
-      <Flipper />
+      <div className='App-body'>
+        <header className='App-header'>
+          <h2>Coin Flip Counter</h2>
+        </header>
+        <Flipper />
+      </div>
     </div>
   );
 }
