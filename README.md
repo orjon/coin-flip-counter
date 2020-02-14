@@ -2,4 +2,4 @@
 
 Experiments with React
 
-![Screen shot](/screenshots/Screenshot.png)
+![Screen shot](/screenshots/screenshot1.png)
