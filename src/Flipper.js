@@ -31,10 +31,17 @@ class Flipper extends Component{
   }
 
   render(){
+    let percentHeads = Math.floor((this.state.headsCount/this.state.flips)*100);
+    let percentTails = 100 - percentHeads;
+    if (isNaN(percentHeads)) {
+      percentHeads = 0
+      percentTails = 0
+    }
     return(
       <div className='Flipper'>
         <Coin side={this.state.side}/>
-        <h3>Flips: {this.state.flips} [ {this.state.headsCount} Heads + {this.state.flips-this.state.headsCount} Tails ]</h3>
+        <h2>Flips: {this.state.flips}</h2>
+        <h3>{this.state.headsCount} ({percentHeads}%) Heads + {this.state.flips-this.state.headsCount} ({percentTails}%) Tails</h3>
         <button onClick={this.flipCoin}>Flip Coin!</button>
       </div>
     );
